@@ -1,0 +1,19 @@
+{"int_ext":[
+    {"interior": "interior", "exterior": "exterior"},
+    {"interior": "interior scene", "exterior": "exterior scene"},
+    {"interior": "interior view", "exterior": "outdoors"},
+    {"interior": "indoor scene", "exterior": "outdoor scene"},
+    {"interior": "indoors", "exterior": "outdoors"},
+    {"interior": "inside a building", "exterior": "outside"},
+    {"interior": "inside a room", "exterior": "outside"}
+    ],
+ "gro_rai_aer":[
+    {"ground": "ground", "raised": "raised", "aerial": "aerial"},
+    {"ground": "ground view", "raised": "raised view", "aerial": "aerial view"},
+    {"ground": "street level", "raised": "view from building", "aerial": "view from airplane"},
+    {"ground": "ground view", "raised": "elevated view", "aerial": "bird's eye view"},
+    {"ground": "ground", "raised": "elevated view", "aerial": "aerial"},
+    {"ground": "ground level", "raised": "elevated view", "aerial": "aerial"},
+    {"ground": "ground level", "raised": "elevated view", "aerial": "aerial view"}
+    ]
+}
