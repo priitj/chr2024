@@ -61,7 +61,7 @@ class Blip2Classifier:
             else:
                 images_embedding = torch.cat((images_embedding, image_emb), 0)
 
-        return images_embedding
+        return images_embedding.detach().cpu()
 
     def text_vectors(self, texts):
         # input must be a list of texts
@@ -79,4 +79,4 @@ class Blip2Classifier:
             else:
                 texts_embedding = torch.cat((texts_embedding, text_emb), 0)
 
-        return texts_embedding
+        return texts_embedding.detach().cpu()
