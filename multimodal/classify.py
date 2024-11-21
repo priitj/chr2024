@@ -6,10 +6,10 @@ from utils.device_config import configure_device
 
 def run_all_splits(model_name, base_dir, prompts_path, report_dir, device="cuda"):
     if "openai/clip" in model_name:
-        from clip import CLIPClassifier
+        from multimodal.clip import CLIPClassifier
         classifier = CLIPClassifier(model_name, device=device)
     elif "google/siglip" in model_name:
-        from clip import SigLIPClassifier
+        from multimodal.clip import SigLIPClassifier
         classifier = SigLIPClassifier(model_name, device=device)
     elif "blip2" in model_name:
         from multimodal.blip2 import Blip2Classifier

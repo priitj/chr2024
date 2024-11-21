@@ -10,11 +10,13 @@ E. Maksimova, M.-A. Meimer, M. Piirsalu, P. Järv. *Viability of Zero-shot Class
 ```
 pip install torch torchvision
 pip install transformers
+pip install sentencepiece
+pip install protobuf
 pip install scikit-learn
 ```
 
 It is recommended to install the LAVIS package in a separate virtual
-enviroment to avoid module version clashes.
+environment to avoid module version clashes.
 
 ```
 pip install salesforce-lavis
@@ -24,7 +26,7 @@ pip install salesforce-lavis
 ## Classification
 
 This part documents the classification experiment. Fully reproducing
-the experiment requires the classification dataset, which
+the results requires the classification dataset, which
 we cannot legally distribute due to copyright. The experiment
 can still be repeated on a similar dataset.
 
@@ -72,4 +74,22 @@ python3 scripts/classif_reports.py mm chr2024/cnn/multimodal/reports
 
 ## Search
 
-Rest of the content coming in Dec 2024.
+Install in every virtual env (assuming LAVIS/BLIP-2 have their own venv):
+
+```
+pip install voyager
+```
+
+The photos for the text-to-image search should be in the directory
+`images/search/photos`, with filenames `photo id.ext`
+(for example, `836926.jpg`). Again, we cannot distribute the photos due to
+copyright. The search terms will be taken from `images/json/search_terms.json`.
+
+```
+scripts/test_search.sh
+```
+
+This will create JSON files with search results for each search terms
+as photo ids ranked by relevancy. In the paper the results were evaluated
+manually by human judges (the truth data for the relevancy of each
+search term was not available).

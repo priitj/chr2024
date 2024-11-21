@@ -56,7 +56,7 @@ class CLIPClassifier:
 
             images_batch = images[i:i + self.batch_size]
             inputs = self.processor(images=images_batch,
-                               return_tensors="pt", padding=self.padding)
+                               return_tensors="pt", padding=self.padding).to(self.device)
             with torch.no_grad():
                 outputs = self.model.get_image_features(**inputs)
             all_embeddings.extend(outputs.detach().cpu().numpy())
@@ -72,7 +72,7 @@ class CLIPClassifier:
 
             text_batch = texts[i:i + self.batch_size]
             inputs = self.processor(text=text_batch,
-                               return_tensors="pt", padding=self.padding)
+                               return_tensors="pt", padding=self.padding).to(self.device)
             with torch.no_grad():
                 outputs = self.model.get_text_features(**inputs)
             all_embeddings.extend(outputs.detach().cpu().numpy())

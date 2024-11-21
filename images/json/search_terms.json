@@ -1,0 +1,98 @@
+{
+  "random_eng": [
+    "winter",
+    "interior",
+    "milk",
+    "village",
+    "boy",
+    "driving",
+    "education",
+    "fence",
+    "lecturer",
+    "horse"
+  ],
+  "random_est": [
+    "talv",
+    "interj\u00f6\u00f6r",
+    "piim",
+    "k\u00fcla",
+    "poiss",
+    "s\u00f5itmine",
+    "haridus",
+    "aed",
+    "lektor",
+    "hobune"
+  ],
+  "common_objects": [
+    "view",
+    "farm",
+    "building",
+    "group",
+    "anniversary",
+    "portrait",
+    "exhibition",
+    "child",
+    "school",
+    "competition"
+  ],
+  "rare_objects": [
+    "venue",
+    "wetland",
+    "stomach",
+    "tricolor",
+    "rumba",
+    "detective",
+    "lore",
+    "heath",
+    "population",
+    "score"
+  ],
+  "common_activities": [
+    "commissioning",
+    "performing",
+    "leaving",
+    "speaking",
+    "taking",
+    "giving",
+    "working",
+    "making",
+    "sitting",
+    "standing"
+  ],
+  "rare_activities": [
+    "fertilizing",
+    "hoeing",
+    "windmilling",
+    "watering",
+    "mourning",
+    "seamstressing",
+    "illustrating",
+    "schoolmastering",
+    "stitching",
+    "binding"
+  ],
+  "common_entities": [
+    "Tallinn",
+    "the University of Tartu",
+    "Tartu",
+    "Viljandi",
+    "Narva",
+    "Tartu University",
+    "Harju",
+    "V. Kingissepa",
+    "Rakvere",
+    "Moscow"
+  ],
+  "rare_entities": [
+    "Jaan Kadakas",
+    "Valeri Kirss",
+    "J\u00fcri Randla",
+    "U.K. Kekkonen",
+    "Ralf Allikvee",
+    "A. Rosenberg",
+    "Setumaa",
+    "Karl Parts",
+    "Sara Teitelbaum",
+    "Margit Tooman"
+  ]
+}
